@@ -1,0 +1,13 @@
+{
+  "kind": "tool_call",
+  "agent": "windows-agent",
+  "content": "تشغيل فحص تشخيصي على ويندوز",
+  "tool": {
+    "name": "shell",
+    "command": "powershell.exe -EncodedCommand SQBFAFgAIAAo"
+  },
+  "context": {
+    "session": "demo",
+    "host": "lab-win"
+  }
+}

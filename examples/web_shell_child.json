@@ -1,0 +1,13 @@
+{
+  "kind": "tool_call",
+  "agent": "process-monitor-agent",
+  "content": "حدث مراقبة عمليات",
+  "tool": {
+    "name": "process-monitor"
+  },
+  "context": {
+    "parent_process": "w3wp.exe",
+    "child_process": "cmd.exe",
+    "host": "iis-prod"
+  }
+}

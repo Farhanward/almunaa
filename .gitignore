@@ -1,0 +1,56 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# --- Secrets / credentials (NEVER COMMIT) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*.der
+id_ed25519*
+id_rsa*
+keys/
+secrets/
+*.secret
+
+# --- Local data, models, indexes, runtime artifacts ---
+data/
+datasets/
+models/
+indexes/
+index/
+logs/
+ledger/
+quarantine/
+workspaces/
+generated/
+profiles/
+tmp/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# --- Node / Rust / build ---
+node_modules/
+target/
+
+# --- Cloudflare / misc caches ---
+.wrangler/
+.coverage
+htmlcov/
+*.tmp

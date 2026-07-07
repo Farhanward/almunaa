@@ -1,0 +1,89 @@
+{
+  "input": "C:\\Projects\\almunaa\\data\\benchmarks\\neuralchemy_prompt_injection_full.events.jsonl",
+  "records_loaded": 15377,
+  "repeat": 1,
+  "processed": 15377,
+  "errors": 0,
+  "error_samples": [],
+  "elapsed_seconds": 3.7825,
+  "throughput_per_second": 4065.28,
+  "latency_ms": {
+    "mean": 0.2195,
+    "p50": 0.1634,
+    "p95": 0.3776,
+    "p99": 1.2437,
+    "max": 5.581
+  },
+  "memory": {
+    "current_mb": 0.56,
+    "peak_mb": 0.597
+  },
+  "input_chars": {
+    "total": 3305538,
+    "mean": 214.97,
+    "max": 7073
+  },
+  "actions": {
+    "ALLOW": 13884,
+    "QUARANTINE": 1487,
+    "BLOCK": 6
+  },
+  "top_rules": {
+    "PROMPT_OVERRIDE": 1163,
+    "PROMPT_INJECTION": 650,
+    "PROMPT_ROLE_TAKEOVER": 260,
+    "TOOL_HIJACK_REQUEST": 156,
+    "PROMPT_LEAK": 87,
+    "CONTEXT_EXFILTRATION": 55,
+    "JAILBREAK": 37,
+    "INPUT_DESTRUCTIVE_INTENT": 6
+  },
+  "categories": {
+    "benign": 5531,
+    "direct_injection": 5360,
+    "adversarial": 1299,
+    "jailbreak": 1071,
+    "encoding": 554,
+    "training_extraction": 239,
+    "edge_case": 142,
+    "system_manipulation": 100,
+    "token_smuggling": 100,
+    "rag_poisoning": 95,
+    "persona_replacement": 87,
+    "agent_manipulation": 84,
+    "instruction_override": 74,
+    "context_confusion": 59,
+    "prompt_injection": 56,
+    "control": 54,
+    "output_manipulation": 52,
+    "prompt_extraction": 49,
+    "model_fingerprinting": 47,
+    "multi_turn": 46,
+    "system_extraction": 45,
+    "response_manipulation": 45,
+    "payload_injection": 42,
+    "crescendo": 33,
+    "indirect_injection": 33
+  },
+  "labeled": 15377,
+  "unlabeled": 0,
+  "confusion": {
+    "tp": 1486,
+    "tn": 5666,
+    "fp": 7,
+    "fn": 8218
+  },
+  "metrics": {
+    "accuracy": 0.4651,
+    "precision": 0.9953,
+    "recall": 0.1531,
+    "specificity": 0.9988,
+    "f1": 0.2654
+  },
+  "collapse": {
+    "status": "PASS",
+    "no_exceptions": true,
+    "p99_under_10ms": true,
+    "peak_memory_under_128mb": true
+  }
+}

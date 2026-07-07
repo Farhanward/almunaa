@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "almunaa"
+version = "1.0.0"
+authors = [{ name = "Farhan Almutairi", email = "far7an.o88@gmail.com" }]
+description = "Agent immune system and quarantine."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "Proprietary" }
+
+[project.scripts]
+almunaa = "almunaa.cli:main"
+
+[tool.setuptools]
+packages = ["almunaa"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

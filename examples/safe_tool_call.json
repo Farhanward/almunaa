@@ -1,0 +1,13 @@
+{
+  "kind": "tool_call",
+  "agent": "carbonflow-agent",
+  "content": "اعرض حالة الحاويات",
+  "tool": {
+    "name": "shell",
+    "command": "docker ps --format '{{.Names}} {{.Status}}'"
+  },
+  "context": {
+    "session": "demo"
+  }
+}
+

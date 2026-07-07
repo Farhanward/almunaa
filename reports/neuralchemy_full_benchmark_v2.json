@@ -1,0 +1,95 @@
+{
+  "input": "C:\\Projects\\almunaa\\data\\benchmarks\\neuralchemy_prompt_injection_full.events.jsonl",
+  "records_loaded": 15377,
+  "repeat": 1,
+  "processed": 15377,
+  "errors": 0,
+  "error_samples": [],
+  "elapsed_seconds": 13.917,
+  "throughput_per_second": 1104.91,
+  "latency_ms": {
+    "mean": 0.8762,
+    "p50": 0.5888,
+    "p95": 1.8283,
+    "p99": 6.568,
+    "max": 19.3263
+  },
+  "memory": {
+    "current_mb": 0.55,
+    "peak_mb": 0.704
+  },
+  "input_chars": {
+    "total": 3305538,
+    "mean": 214.97,
+    "max": 7073
+  },
+  "actions": {
+    "ALLOW": 12978,
+    "QUARANTINE": 2393,
+    "BLOCK": 6
+  },
+  "top_rules": {
+    "PROMPT_OVERRIDE": 2580,
+    "PROMPT_INJECTION": 1400,
+    "CODE_EXECUTION_REQUEST": 832,
+    "PROMPT_ROLE_TAKEOVER": 615,
+    "SQUASHED_PROMPT_OVERRIDE": 429,
+    "TOOL_HIJACK_REQUEST": 366,
+    "PROMPT_LEAK": 208,
+    "CONTEXT_EXFILTRATION": 135,
+    "JAILBREAK": 101,
+    "HARMFUL_SECURITY_REQUEST": 65,
+    "PROMPT_EXTRACTION": 56,
+    "PRIVILEGED_AGENT_OPERATION": 21,
+    "INPUT_DESTRUCTIVE_INTENT": 12,
+    "AR_PROMPT_INJECTION": 1
+  },
+  "categories": {
+    "benign": 5531,
+    "direct_injection": 5360,
+    "adversarial": 1299,
+    "jailbreak": 1071,
+    "encoding": 554,
+    "training_extraction": 239,
+    "edge_case": 142,
+    "system_manipulation": 100,
+    "token_smuggling": 100,
+    "rag_poisoning": 95,
+    "persona_replacement": 87,
+    "agent_manipulation": 84,
+    "instruction_override": 74,
+    "context_confusion": 59,
+    "prompt_injection": 56,
+    "control": 54,
+    "output_manipulation": 52,
+    "prompt_extraction": 49,
+    "model_fingerprinting": 47,
+    "multi_turn": 46,
+    "system_extraction": 45,
+    "response_manipulation": 45,
+    "payload_injection": 42,
+    "crescendo": 33,
+    "indirect_injection": 33
+  },
+  "labeled": 15377,
+  "unlabeled": 0,
+  "confusion": {
+    "tp": 2381,
+    "tn": 5655,
+    "fp": 18,
+    "fn": 7323
+  },
+  "metrics": {
+    "accuracy": 0.5226,
+    "precision": 0.9925,
+    "recall": 0.2454,
+    "specificity": 0.9968,
+    "f1": 0.3935
+  },
+  "collapse": {
+    "status": "PASS",
+    "no_exceptions": true,
+    "p99_under_10ms": true,
+    "peak_memory_under_128mb": true
+  }
+}
